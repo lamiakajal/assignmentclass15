@@ -1,0 +1,523 @@
+/* google fonts linking here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ************************
+****    Global CSS     ****
+***************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    overflow-x: hidden;     
+    color: #526375;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+    line-height: 24px;
+    font-weight: 700;
+}
+h1{
+    font-size: 38px;
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    font-weight: 400; 
+}
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    font-size: 16px;
+} 
+p{
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #cccccc;
+}
+ul{
+    list-style: none;
+}
+ul , ol{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+}
+a:hover {
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.underline{
+    width: 100px;
+    height: 2px;
+    background-color: #ff8b38;
+    margin: 0 auto;
+}
+
+#ff9b51 #ff8b38 #333333 box
+/* *******************
+HEADER SECTION START
+********************** */
+header{
+    width: 100%;
+    padding: 10px 0px;
+}
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: black;
+}
+.navbar .nav-link{
+    color: white;
+    font-weight: 600;
+    transition: 0.8s;
+}
+.navbar .nav-link:hover{
+    color: #ff8b38;
+    transition: 0.8s;
+}
+.nav-item{
+    margin-left: 25px;
+    position: relative;
+}
+.nav-item .active{
+    color: white !important;
+    transition: 0.8s;
+}
+.nav-item .active:hover{
+    color: #ff8b38 !important;
+    transition: 0.8s;
+}
+.nav-item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff9b51;
+    transition: 0.8s;
+}
+.nav-item:hover::after{
+    width: 100%;
+    transition: 0.8s;
+}
+ /* *******************
+HEADER SECTION END
+********************** */
+
+/* *******************
+HERO SECTION START
+********************** */
+.hero-section{
+    width: 100%;
+    background: url(../images/banner1.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.cus-height{
+    height: 100vh;
+}
+.content h1{
+    font-size: 75px;
+    font-weight: 700;
+    color: white;
+}
+.content h1 span{
+    font-size: 75px;
+    font-weight: 300;
+    color: #ff8b38;
+}
+.content h2{
+    padding-top: 30px;
+    color: white;
+    width: 74%;
+    line-height: 40px;
+}
+.content .underline{
+    width: 72px;
+    margin: 0;
+    background-color: white;
+    margin: 25px 0px;
+}
+.content p{
+    color: #a4a5a8;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    width: 68%;
+}
+.btns a{
+    padding: 8px 30px;
+}
+.btns .btn-info{
+    border-radius: 0px;
+    background: transparent;
+    border: 2px solid;
+    color: #f5f5f5;
+    margin-top: 30px;
+    transition: 0.8s;
+}
+.btns .btn-info:hover{
+    color: #ff8b38;
+    transition: 0.8s;
+}
+
+.right-inner{
+    margin-top: 10px;
+}
+.right-inner .card{
+    width: 350px;
+    border: none !important;
+}
+.right-inner .card-body{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.right-inner .card-header h3{
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+}
+.right-inner .card-header h3 span{
+    font-size: 22px;
+    color: #ff8b38;
+}
+.right-inner .card-footer{
+    background-color: #ff9b51;
+    transition: 0.8s;
+    text-align: center;
+    padding: 15px 0px;
+}
+.right-inner .card-footer:hover{
+    background-color: #ff8b38;
+    transition: 0.8s;
+    cursor: pointer;
+    text-align: center;
+}
+.right-inner .card-footer .form-control-b{
+    border: none !important;
+    background: transparent;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.form-control{
+    border: none !important;
+    border-bottom: 1px solid #d6d6d6 !important;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+input:focus{
+    box-shadow: #ff8b38 !important;
+}
+
+/* *******************
+HERO SECTION END
+********************** */
+
+/* *******************
+SOCIAL SECTION START
+********************** */
+.social-section{
+    width: 100%;
+    border-bottom: 2px solid #b7b7b7;
+    padding: 15px 0 10px;
+}
+.social-section .content{
+    
+}
+.social-section h4{
+    color: #333333;
+
+}
+.social-section p{
+    width: 87%;
+    color: #86878b;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.social-section .social-icons{
+    padding: 10px;
+    text-align: right;
+}
+.social-section .social-icons ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+}
+.social-section .social-icons ul li a{
+
+}
+.social-section .social-icons ul li a i{
+    font-size: 50px;
+    line-height: 65px;
+    color: #cccccc;
+    transition: 0.8s;
+}
+.social-section .social-icons ul li a i:hover{
+    transform: scale(1.2);
+    color: #ff9a52;
+    transition: 0.8s;
+}
+/* *******************
+SOCIAL SECTION END
+********************** */
+
+/* *******************
+TAB SECTION START
+********************** */
+.tab-section{
+    width: 100%;
+    padding: 80px;
+    background-color: #f5f5f5;
+}
+.tab-section h4{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 55px;
+}
+.tab-section p{
+    color: #86878b;
+    width: 77%;
+    margin-left: 55px;  
+}
+button.nav-link{
+    width: 110px !important;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #333333;
+    padding: 40px 0px;
+    transition: 0.8s;
+}
+button.nav-link:hover{
+    color: white;
+    transition: 0.8s;
+    background-color: #171717;
+}
+.tab-1{
+    border-radius: 4px 4px 0 0 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+.tab-2{
+    border-radius: 0 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+.tab-3{
+    border-radius: 0 0 4px 4px !important;
+}
+.nav-pills .nav-link.active{
+    background-color: #ff8b38;
+}
+.btns-c .tab-btn{
+    display: inline-block;
+    padding: 8px 22px;
+    margin-top: 15px;
+    background-color: #ff8b38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: 0.8s;
+    margin-left: 55px;
+}
+/* *******************
+TAB SECTION END
+********************** */
+
+/* *******************
+SUB-LIST SECTION START
+********************** */
+.sub-list{
+    padding-top: 80px;
+    background-color: white;
+}
+.sub-list-image img{
+    max-width: 100%;
+}
+.sub-list-content{
+    width: 90%;
+    margin-left: auto;
+}
+.sub-list-content h4{
+    color: #86878b;
+    display: inline-block;
+    margin: 25px 0 15px;
+}
+.sub-list-content p{
+    padding-bottom: 30px;
+}
+.sub-list-content .sublist-footer .item{
+    display: flex;
+    gap: 30px;
+}
+.sub-list-content .sublist-footer .item .icons{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    color: #ff8b38;
+    font-size: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+.sub-list-content .sublist-footer .item:hover .icons{
+    background-color: #ff8b38;
+    color: white;
+}
+/* *******************
+SUB-LIST SECTION END
+********************** */
+
+/* *******************
+STANDARD PICTURE SECTION START
+********************** */
+.standard-picture-section{
+    width: 100%;
+    padding: 80px;
+    background-color: #f5f5f5;
+}
+.standard-picture-section .standard-content{
+
+}
+.standard-picture-section .standard-content h4{
+    margin-top: 35px;
+}
+.standard-picture-section .standard-content p{
+    width: 85%;
+    color: #86878b;
+}
+.standard-picture-section .standard-content .underline{
+    width: 72px;
+    margin: 0;
+    background-color: #ff8b38;
+    margin: 25px 0px;
+}
+/* *******************
+STANDARD PICTURE SECTION END
+********************** */
+
+/* *******************
+AWESOME SECTION START
+********************** */
+.awesome-section{
+    width: 100%;
+    padding: 80px;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading h2{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.heading p{
+    margin-top: 25px;
+    color: #86878b;
+}
+.feature-content{
+    text-align: center;
+    padding-top: 30px;
+}
+.feature-content i{
+    font-size: 25px;
+    color: #ff8b38;
+    background-color: white !important;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.8s;
+}
+.feature-content i:hover{
+    transform: scale(1.1);
+    color: #ff9a52;
+    transition: 0.8s;
+}
+.feature-content .icon h4{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.feature-content .icon p{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #86878b;
+}
+/* *******************
+AWESOME SECTION END
+********************** */
+
+/* *******************
+PRICING SECTION START
+********************** */
+.pricing-section{
+    width: 100%;
+    padding: 80px;
+    background-color: #f5f5f5;
+}
+
+/* *******************
+PRICING SECTION END
+********************** */
+
+/* *******************
+STORY SECTION START
+********************** */
+
+
+
+/* *******************
+STORY SECTION END
+********************** */
+
+/* *******************
+LOCATION SECTION START
+********************** */
+
+/* *******************
+LOCATION SECTION END
+********************** */
+
+/* *******************
+FOOTER SECTION START
+********************** */
+
+
+
+/* *******************
+FOOTER SECTION END
+********************** */
